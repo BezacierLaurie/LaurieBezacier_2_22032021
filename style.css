@@ -202,6 +202,8 @@ html
     align-self: center;
 }
 
+/* Hébergements */
+
 /* Section */
 
 section
@@ -209,22 +211,20 @@ section
     background-color: #F2F2F2;
 }
 
-/* Hébergement */
-
 /* Titre*/
 
-.container_hebergement_titre
+.container_hebergements_titre
 {
     display: flex;
 }
 
-.element_hebergement_titre
+.element_hebergements_titre
 {
     margin-left: 2em;
     margin-bottom: 0;
 }
 
-.element_hebergement_titre a
+.element_hebergements_titre a
 {
     color: black;
     text-decoration: none;
@@ -232,35 +232,35 @@ section
 
 /* Photos */
 
-.container_hebergement_photos
+.container_hebergements_photos
 {
     display: flex;
 }
 
-.element_hebergement_photos img
+.element_hebergements_photos img
 {
     height: 7.5em;
     width: 11em;
     border-radius: 10px 10px 0px 0px;
 }
 
-.element_hebergement_photos figcaption
+.element_hebergements_photos figcaption
 {
     font-size: 0.8em;
 }
 
-.element_hebergement_photos>figcaption>h4
+.element_hebergements_photos>figcaption>h4
 {
     margin: 5px;
 }
 
-.element_hebergement_photos>figcaption>h5
+.element_hebergements_photos>figcaption>h5
 {
     margin: 5px;
     font-weight: 100;
 }
 
-.element_hebergement_photos>figcaption>h5>span
+.element_hebergements_photos>figcaption>h5>span
 {
     font-weight: bold;
 }
@@ -277,6 +277,70 @@ section
     color: black;
     text-decoration: none;
     margin: 2em;
+}
+
+/* Les plus populaires */
+
+/* Aside */
+
+aside
+{
+    background-color: #F2F2F2;
+    float: right;
+}
+
+/* Titre*/
+
+.container_populaire_titre
+{
+    display: flex;
+}
+
+.element_populaire_titre
+{
+    margin-left: 2em;
+    margin-bottom: 0;
+}
+
+.element_populaire_titre a
+{
+    color: black;
+    text-decoration: none;
+}
+
+/* Photos */
+
+.container_populaire_photos
+{
+    display: flex;
+}
+
+.element_populaire_photos img
+{
+    height: 7.5em;
+    width: 11em;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.element_populaire_photos figcaption
+{
+    font-size: 0.8em;
+}
+
+.element_populaire_photos>figcaption>h4
+{
+    margin: 5px;
+}
+
+.element_populaire_photos>figcaption>h5
+{
+    margin: 5px;
+    font-weight: 100;
+}
+
+.element_populaire_photos>figcaption>h5>span
+{
+    font-weight: bold;
 }
 
 /* Activité */
