@@ -105,6 +105,11 @@ html
 
 /* Terme de recherche */
 
+.container_recherche_form
+{
+    display: flex;
+}
+
 #element_terme_recherche
 {
     height: 2.5em;
@@ -116,9 +121,9 @@ html
     height: 2.5em;
     background-color: #0065FC;
     color: white;
-    border-top-right-radius: 15%;
-    border-bottom-right-radius: 15%;
+    border-radius: 0px 10px 10px 0px;
     border: 1px solid white;
+    width: 100%;
 }
 
 /* Filtres */
@@ -128,18 +133,71 @@ html
     font-size: 0.8em;
 }
 
-.filtres_row td
+.filtres_row>td>button
 {
+    height: 36px;
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    text-align-last: start;
+    padding-left: 0px;
+    padding-top: 0px;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 50px 50px 50px 50px;
+    margin: 1.5em;
+    font-size: 1em;
+}
+
+.filtres_row>td>button:hover
+{
+    height: 36px;
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    text-align-last: start;
+    padding-left: 0px;
+    padding-top: 0px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 50px 50px 50px 50px;
+    margin: 1.5em;
+    font-size: 1em;
+    color: #0065FC;    
 }
 
 /* Icones */
 
-.filtres_row>td>i
+.filtres_row>td>button>i
 {
     background-color: #DEEBFF;
     border-radius: 50%;
-    border: 1px solid #F2F2F2;
     padding: 10px;
     color: #0065FC;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    text-align-last: center;
+    align-self: center;
+    display: inline;
+}
+
+/* Information */
+
+.container_information
+{
+    display: flex;
+    font-size: 0.6em;
+}
+
+.container_information i
+{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    color: #0065FC;
+    margin-right: 10px;
+    height: 8px;
+    width: 8px;
+    text-align-last: center;
+    border: 1px solid #F2F2F2;
+    align-self: center;
 }
