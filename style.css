@@ -1,0 +1,145 @@
+/* Police */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('police/Raleway-Medium.ttf');
+}
+
+/* HTML */
+html
+{
+    font-family:'Raleway', sans-serif;
+    margin: 1em;
+}
+
+/* Header */
+
+/* Navbar*/
+
+.container_nav
+{
+    height: 70px;
+    display: flex;
+}
+
+#element_logo
+{
+    height: 2em;
+    align-self: center;
+}
+
+.element_liens_header
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.element_liens_header li
+{
+    color: black;
+    text-decoration: none;
+}
+
+.element_liens_header>li>a
+{
+    color: black;
+    text-decoration: none;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.element_liens_header>li>a:focus
+{
+    color: #0065FC !important;
+    text-decoration: none;
+    border-top: 1px solid #0065FC;
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.element_lien_inscription
+{
+    align-self: center;
+    font-weight: bold;
+    margin: 2em;
+    color: #0065FC !important;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+/* Titre H1 & H2 */
+
+.container_titre_header
+{
+    font-size: 0.6em;
+}
+
+.container_titre_header h2
+{
+    font-weight: 100;
+}
+
+/* Recherche */
+
+.container_recherche
+{
+    display: flex;
+}
+
+/* Icone 'position' */
+
+.container_recherche i
+{
+    background-color: #F2F2F2;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border: 1px solid #F2F2F2;
+    padding: 0.5em;
+}
+
+/* Terme de recherche */
+
+#element_terme_recherche
+{
+    height: 2.5em;
+    border: 1px solid #F2F2F2;
+}
+
+.element_btn_recherche
+{
+    height: 2.5em;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border: 1px solid white;
+}
+
+/* Filtres */
+
+.element_filtres
+{
+    font-size: 0.8em;
+}
+
+.filtres_row td
+{
+    font-weight: bold;
+}
+
+/* Icones */
+
+.filtres_row>td>i
+{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    color: #0065FC;
+}
