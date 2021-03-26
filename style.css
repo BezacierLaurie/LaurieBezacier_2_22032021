@@ -25,7 +25,7 @@ html
 
 #element_logo
 {
-    height: 2em;
+    height: 3em;
     align-self: center;
 }
 
@@ -36,7 +36,7 @@ html
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    font-size: 0.8em;
+    font-size: 1.1em;
 }
 
 .element_liens_header li
@@ -70,7 +70,7 @@ html
     margin: 2em;
     color: #0065FC !important;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1.1em;
 }
 
 /* Titre H1 & H2 */
@@ -186,6 +186,7 @@ html
 {
     display: flex;
     font-size: 0.6em;
+    margin-bottom: 2em;
 }
 
 .container_information i
@@ -202,91 +203,29 @@ html
     align-self: center;
 }
 
-/* Hébergements */
+/* Section Hébergement - Les plus Populaires - Afficher plus */
 
-/* Section */
-
-section
+.container_section_HebPopAff
 {
-    background-color: #F2F2F2;
-}
-
-/* Titre*/
-
-.container_hebergements_titre
-{
-    display: flex;
-}
-
-.element_hebergements_titre
-{
-    margin-left: 2em;
-    margin-bottom: 0;
-}
-
-.element_hebergements_titre a
-{
-    color: black;
-    text-decoration: none;
-}
-
-/* Photos */
-
-.container_hebergements_photos
-{
-    display: flex;
-}
-
-.element_hebergements_photos img
-{
-    height: 7.5em;
-    width: 11em;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.element_hebergements_photos figcaption
-{
-    font-size: 0.8em;
-}
-
-.element_hebergements_photos>figcaption>h4
-{
-    margin: 5px;
-}
-
-.element_hebergements_photos>figcaption>h5
-{
-    margin: 5px;
-    font-weight: 100;
-}
-
-.element_hebergements_photos>figcaption>h5>span
-{
-    font-weight: bold;
-}
-
-/* 'Afficher plus' */
-
-.container_affPlus
-{
-    display: flex;
-}
-
-.element_affPlus
-{
-    color: black;
-    text-decoration: none;
-    margin: 2em;
+    width: 100%;
+    height: 650px;
 }
 
 /* Les plus populaires */
 
-/* Aside */
-
-aside
+.element_section_populaire
 {
     background-color: #F2F2F2;
     float: right;
+    width: 20%;    
+    height: 733px;
+}
+
+.container_populaire
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
 }
 
 /* Titre*/
@@ -294,6 +233,7 @@ aside
 .container_populaire_titre
 {
     display: flex;
+    justify-content: space-between;
 }
 
 .element_populaire_titre
@@ -302,10 +242,10 @@ aside
     margin-bottom: 0;
 }
 
-.element_populaire_titre a
+.element_populaire_icon
 {
-    color: black;
-    text-decoration: none;
+    margin-right: 2em;
+    align-self: flex-end;
 }
 
 /* Photos */
@@ -313,12 +253,21 @@ aside
 .container_populaire_photos
 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.element_populaire_photos
+{
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .element_populaire_photos img
 {
-    height: 7.5em;
-    width: 11em;
+    height: 193px;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -343,4 +292,246 @@ aside
     font-weight: bold;
 }
 
-/* Activité */
+/* Hébergements */
+
+.container_section_hebergements
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.element_section_hebergements
+{
+    height: 786px;
+    width: 78%;
+    background-color: #F2F2F2;
+}
+
+/* Titre Hébergements */
+
+.container_hebergements_titre
+{
+    display: flex;
+}
+
+.element_hebergements_titre
+{
+    margin-left: 2em;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+.element_hebergements_titre a
+{
+    color: black;
+    text-decoration: none;
+}
+
+/* Photos Hébergements */
+
+.container_hebergements_photos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.element_hebergements_photos
+{
+    text-decoration: none;
+    color: black;
+}
+
+.element_hebergements_photos figure
+{
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.element_hebergements_photos img
+{
+    border-radius: 10px 10px 0px 0px;
+    height: 250px;
+    width: 395px;
+}
+
+.element_hebergements_photos>figure>figcaption>h4
+{
+    margin: 5px;
+}
+
+.element_hebergements_photos>figure>figcaption>h5
+{
+    margin: 5px;
+    font-weight: 100;
+}
+
+.element_hebergements_photos>figure>figcaption>h5>span
+{
+    font-weight: bold;
+}
+
+/* Notation étoiles */
+
+/* Par défaut, une étoile est en gris, avec un padding et un curseur en forme de main. */
+.fa-star 
+{
+	color: #F2F2F2;
+	cursor: pointer;
+	padding: 2px;
+}
+
+/* Si elle porte en plus la classe '.blue', elle sera en bleu */
+.fa-star.blue {
+	color: #0065FC;
+}
+
+/* Le parent global '.rating' positionne le groupe des étoiles et le lien en colonne */
+.rating 
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/* Le groupe '.stars' positionne les étoiles les unes à côté des autres sans espacements */
+.stars 
+{
+    display: inline-flex;
+	justify-content: center;
+	font-size: 1em;
+}
+
+/* Pour les activer :
+
+A l'état :hover sur le parent '.rating', on force TOUTES les étoiles à passer en bleu
+.stars:hover .fa-star 
+{
+	color: #0065FC;
+}
+
+Et si la souris survole une étoile en particulier, on sélectionne toutes les étoiles qui sont après celle-ci grâce à l'opérateur '~' et on les force en gris
+.stars .fa-star:hover ~ .fa-star 
+{
+	color: #F2F2F2;
+}
+
+*/
+
+/* 'Afficher plus' */
+
+.container_affPlus
+{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 78%;
+}
+
+.element_affPlus
+{
+    color: black;
+    text-decoration: none;
+    margin: 2em;
+    margin-left: 2.5em;
+}
+
+/* Section Activités */
+
+.container_section_Activites
+{
+    width: 100%;
+    height: 605px;
+    margin-top: 15em;
+}
+
+.element_section_activites
+{
+    height: 786px;
+    width: 100%;
+}
+
+/* Titre Activités */
+
+.container_activites_titre
+{
+    display: flex;
+}
+
+.element_activites_titre
+{
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+.element_activites_titre a
+{
+    color: black;
+    text-decoration: none;
+}
+
+/* Photos Activités */
+
+.container_activites_photos
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.element_activites_photos
+{
+    text-decoration: none;
+    color: black;
+}
+
+.element_activites_photos figure
+{
+    padding-bottom: 3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -1px 2px 5px 1px #f2f2f2;
+    margin: 20px 0px;
+}
+
+.element_activites_photos img
+{
+    border-radius: 10px 10px 0px 0px;
+    height: 440px;
+    width: 350px;
+}
+
+.activites_photos_doubles
+{
+    height: 194px !important;
+}
+
+.element_activites_photos>figure>figcaption>h4
+{
+    margin: 5px;
+}
+
+/* Footer */
+
+.container_footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.element_footer
+{
+    margin-right: 25em;
+    margin-left: 20px;
+}
+
+.element_footer ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.element_footer>ul>li
+{
+    margin-bottom: 10px;
+}
