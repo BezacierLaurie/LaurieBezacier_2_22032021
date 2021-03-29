@@ -126,6 +126,11 @@ html
     width: 100%;
 }
 
+.fa-search
+{
+    display: none;
+}
+
 /* Filtres */
 
 .element_filtres
@@ -133,7 +138,7 @@ html
     font-size: 0.8em;
 }
 
-.filtres_row>td>button
+.filtres_all>td>button
 {
     height: 36px;
     border: 1px solid #F2F2F2;
@@ -148,7 +153,7 @@ html
     font-size: 1em;
 }
 
-.filtres_row>td>button:hover
+.filtres_all>td>button:hover
 {
     height: 36px;
     border: 1px solid #F2F2F2;
@@ -166,7 +171,7 @@ html
 
 /* Icones */
 
-.filtres_row>td>button>i
+.filtres_all>td>button>i
 {
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -618,7 +623,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     /* Navbar */
     .container_nav 
     {
-        height: 174px;
+        height: 134px;
         display: flex;
         flex-direction: column;
     }
@@ -660,5 +665,40 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         align-self: flex-end;
         margin: 0px;
         margin-top: -1.7em;
+    }
+
+    /* Recherche */
+
+    .element_btn_recherche
+    {
+        display: none;
+    }
+    .fa-search
+    {
+        display: flex;
+        color: white !important;
+        background-color: #0065FC !important;
+        border-radius: 30% !important;
+        border: 1px solid #F2F2F2;
+        padding: 0.5em;
+        font-size: 0.8em;
+        align-items: center;
+        width: 1.5em;
+        justify-content: center;
+    }
+
+    /* Filtres */
+    .filtres_all
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .filtres_all th
+    {
+        height: 1em;
+        margin-top: 5px;
+        display: flex;
     }
 }
