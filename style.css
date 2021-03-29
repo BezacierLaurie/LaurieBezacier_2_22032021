@@ -535,3 +535,130 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 {
     margin-bottom: 10px;
 }
+
+/* Responsive */
+
+/* Tablette de largeur : 768px et de hauteur : 1024px */
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 1024px */
+@media all and (min-width: 768px) and (max-width: 1024px)
+{
+    /* Filtres */
+    .filtres_row>td>button 
+    {
+        height: 36px;
+        border: 1px solid #F2F2F2;
+        background-color: white;
+        text-align-last: start;
+        padding-left: 0px;
+        padding-top: 0px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px 5px;
+        font-size: 1em;
+    }
+
+    /* Hébergements */
+    .element_section_hebergements 
+    {
+        height: 138em; 
+        width: 60%; 
+        background-color: #F2F2F2;
+    }
+    .element_hebergements_titre 
+    {
+        margin-left: 1em;
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+
+    /* Les plus Populaires */
+    .element_section_populaire 
+    {
+        background-color: #F2F2F2;
+        float: right;
+        width: 38%;
+        height: 733px;
+    }
+
+    /* Afficher plus */
+    .container_affPlus {
+        display: flex;
+        background-color: #F2F2F2;
+        width: 60%;
+    }
+    
+    /* Activités */
+    .container_section_Activites 
+    {
+        width: 100%;
+        height: 605px;
+        margin-top: 105em;
+    }
+
+    /* Footer */
+    .container_footer {
+        display: flex;
+        background-color: #F2F2F2;
+        margin-top: 32em;
+    }
+    .element_footer 
+    {
+        margin-right: 3em;
+        margin-left: 20px;
+    }
+}
+
+/* I Phone 8 de largeur : 375px et de hauteur : 667px */
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 667px */
+@media screen and (max-width: 667px)
+{
+    /* Navbar */
+    .container_nav 
+    {
+        height: 174px;
+        display: flex;
+        flex-direction: column;
+    }
+    #element_logo:nth-child(1) 
+    {
+        order: 1;
+        height: 3em;
+        align-self: start;
+    }
+    .element_liens_header:nth-child(2)
+    {
+        order: 3;
+        list-style: none;
+        display: flex;
+        font-size: 1.1em;
+        padding-left: 0px;
+        margin-top: 2em;
+        justify-content: center;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 1em;
+    }
+    .element_liens_header>li>a:focus
+    {
+        color: #0065FC !important;
+        text-decoration: none;
+        border-bottom: 2px solid #0065FC;
+        border-top: 0px solid #0065FC;
+        padding-top: 0;
+        padding-bottom: 1em;
+    }
+    .element_lien_inscription:nth-child(3) 
+    {
+        order: 2;
+        align-self: center;
+        font-weight: bold;
+        color: #0065FC !important;
+        text-decoration: none;
+        font-size: 1.1em;
+        align-self: flex-end;
+        margin: 0px;
+        margin-top: -1.7em;
+    }
+}
