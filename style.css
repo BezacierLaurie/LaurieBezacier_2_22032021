@@ -92,6 +92,11 @@ html
     display: flex;
 }
 
+.container_recherche input
+{
+    font-weight: bold;
+}
+
 /* Icone 'position' */
 
 .container_recherche i
@@ -210,12 +215,6 @@ html
 
 /* Section Hébergement - Les plus Populaires - Afficher plus */
 
-.container_section_HebPopAff
-{
-    width: 100%;
-    height: 650px;
-}
-
 /* Les plus populaires */
 
 .element_section_populaire
@@ -307,7 +306,6 @@ html
 
 .element_section_hebergements
 {
-    height: 786px;
     width: 78%;
     background-color: #F2F2F2;
 }
@@ -339,6 +337,7 @@ html
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 2em;
 }
 
 .element_hebergements_photos
@@ -445,15 +444,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
 .container_section_Activites
 {
-    width: 100%;
-    height: 605px;
-    margin-top: 15em;
-}
-
-.element_section_activites
-{
-    height: 786px;
-    width: 100%;
+    padding-bottom: 2em;
 }
 
 /* Titre Activités */
@@ -549,6 +540,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 @media all and (min-width: 768px) and (max-width: 1024px)
 {
     /* Filtres */
+
     .filtres_row>td>button 
     {
         height: 36px;
@@ -560,17 +552,19 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         font-weight: bold;
         font-family: 'Raleway', sans-serif;
         border-radius: 50px 50px 50px 50px;
-        margin: 5px 5px;
+        margin: 1em;
         font-size: 1em;
     }
 
     /* Hébergements */
+
     .element_section_hebergements 
     {
         height: 138em; 
         width: 60%; 
         background-color: #F2F2F2;
     }
+
     .element_hebergements_titre 
     {
         margin-left: 1em;
@@ -579,6 +573,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     }
 
     /* Les plus Populaires */
+
     .element_section_populaire 
     {
         background-color: #F2F2F2;
@@ -588,26 +583,22 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     }
 
     /* Afficher plus */
-    .container_affPlus {
+
+    .container_affPlus 
+    {
         display: flex;
         background-color: #F2F2F2;
         width: 60%;
     }
     
-    /* Activités */
-    .container_section_Activites 
-    {
-        width: 100%;
-        height: 605px;
-        margin-top: 105em;
-    }
-
     /* Footer */
-    .container_footer {
+
+    .container_footer
+    {
         display: flex;
         background-color: #F2F2F2;
-        margin-top: 32em;
     }
+
     .element_footer 
     {
         margin-right: 3em;
@@ -618,21 +609,24 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 /* I Phone 8 de largeur : 375px et de hauteur : 667px */
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 667px */
-@media screen and (max-width: 667px)
+@media screen and (max-width: 375px)
 {
     /* Navbar */
+
     .container_nav 
     {
         height: 134px;
         display: flex;
         flex-direction: column;
     }
+
     #element_logo:nth-child(1) 
     {
         order: 1;
         height: 3em;
         align-self: start;
     }
+
     .element_liens_header:nth-child(2)
     {
         order: 3;
@@ -645,6 +639,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         border-bottom: 2px solid #F2F2F2;
         padding-bottom: 1em;
     }
+
     .element_liens_header>li>a:focus
     {
         color: #0065FC !important;
@@ -654,6 +649,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         padding-top: 0;
         padding-bottom: 1em;
     }
+
     .element_lien_inscription:nth-child(3) 
     {
         order: 2;
@@ -673,6 +669,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     {
         display: none;
     }
+
     .fa-search
     {
         display: flex;
@@ -688,17 +685,152 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     }
 
     /* Filtres */
+
     .filtres_all
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        flex-direction: column;
     }
 
     .filtres_all th
     {
-        height: 1em;
         margin-top: 5px;
         display: flex;
     }
+
+    .filtres_all>td>button 
+    {
+        height: 36px;
+        border: 1px solid #F2F2F2;
+        background-color: white;
+        text-align-last: start;
+        padding-left: 0px;
+        padding-top: 0px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 50px 50px 50px 50px;
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    /* Section Hébergement - Les plus Populaires - Afficher plus */
+
+    .container_section_HebPopAff
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Les plus Populaires */
+
+    .element_section_populaire 
+    {
+        background-color: #F2F2F2;
+        float: right;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1em;
+    }
+
+    /* Hébergements */
+
+    .element_section_hebergements 
+    {
+        background-color: white;
+        width: 100%;
+    }
+
+    .element_hebergements_titre 
+    {
+        margin: 5px 0px 5px 0px;
+        font-size: 1.5em;
+    }
+
+    .container_hebergements_photos 
+    {
+        display: flex;
+        padding-bottom: 1em;
+        flex-direction: column;
+    }
+
+    .element_hebergements_photos 
+    {
+        text-decoration: none;
+        color: black;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .element_hebergements_photos figure 
+    {
+        background-color: white;
+        padding: 3px;
+        border-radius: 10px 10px 10px 10px;
+        margin: 0;
+    }
+
+    .element_hebergements_photos img 
+    {
+        border-radius: 10px 10px 0px 0px;
+        height: 250px;
+        width: 321px;
+    }
+
+    /* Afficher plus */
+    .container_affPlus 
+    {
+        display: flex;
+        background-color: white;
+        width: 100%;
+    }
+
+    .element_affPlus 
+    {
+        color: black;
+        text-decoration: none;
+        margin: 0;
+        margin-left: 0;
+    }
+
+    /* Activités */
+
+    .container_activites_photos 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .element_activites_photos figure 
+    {
+        padding-bottom: 3px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: -1px 2px 5px 1px #f2f2f2;
+        margin: 0px 0px;
+        margin-top: 1.5em;
+    }
+
+    .element_activites_photos img 
+    {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Footer */
+
+    .container_footer 
+    {
+        display: flex;
+        background-color: #F2F2F2;
+        flex-direction: column;
+        padding-left: 2em;
+    }
+
+    .element_footer 
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
 }
