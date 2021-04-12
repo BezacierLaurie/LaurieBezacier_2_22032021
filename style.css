@@ -222,7 +222,6 @@ html
     background-color: #F2F2F2;
     float: right;
     width: 20%;    
-    height: 733px;
 }
 
 .container_populaire
@@ -244,12 +243,14 @@ html
 {
     margin-left: 2em;
     margin-bottom: 0;
+    font-size: 1.5em;
 }
 
 .element_populaire_icon
 {
-    margin-right: 2em;
+    margin-right: 17px;
     align-self: flex-end;
+    margin-bottom: 4px;
 }
 
 /* Photos */
@@ -266,6 +267,7 @@ html
     background-color: white;
     padding: 3px;
     border-radius: 10px 10px 10px 10px;
+    width: 100%;
 }
 
 .element_populaire_photos img
@@ -436,7 +438,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 {
     color: black;
     text-decoration: none;
-    margin: 2em;
+    margin: 2.27em;
     margin-left: 2.5em;
 }
 
@@ -513,6 +515,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 {
     display: flex;
     background-color: #F2F2F2;
+    justify-content: space-between;
 }
 
 .element_footer
@@ -534,14 +537,14 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
 /* Responsive */
 
-/* Tablette de largeur : 768px et de hauteur : 1024px */
+/* Tablette de largeur : 768px */
 
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 1024px */
-@media all and (min-width: 768px) and (max-width: 1024px)
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 375px et 768px */
+@media all and (min-width: 375px) and (max-width: 768px)
 {
     /* Filtres */
 
-    .filtres_row>td>button 
+    .filtres_all>td>button 
     {
         height: 36px;
         border: 1px solid #F2F2F2;
@@ -579,7 +582,14 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         background-color: #F2F2F2;
         float: right;
         width: 38%;
-        height: 733px;
+    }
+
+    .element_populaire_titre
+    {
+        margin-left: 2em;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 1em;
     }
 
     /* Afficher plus */
@@ -589,6 +599,13 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         display: flex;
         background-color: #F2F2F2;
         width: 60%;
+    }
+
+    .element_affPlus {
+        color: black;
+        text-decoration: none;
+        margin: 2.27em;
+        margin-left: 1.5em;
     }
     
     /* Footer */
@@ -602,13 +619,13 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     .element_footer 
     {
         margin-right: 3em;
-        margin-left: 20px;
+        margin-left: 18px;
     }
 }
 
-/* I Phone 8 de largeur : 375px et de hauteur : 667px */
+/* I Phone 8 de largeur : 375px */
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 667px */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 375px */
 @media screen and (max-width: 375px)
 {
     /* Navbar */
@@ -740,6 +757,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     {
         background-color: white;
         width: 100%;
+        height: auto;
     }
 
     .element_hebergements_titre 
