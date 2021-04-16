@@ -3,7 +3,9 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url('police/Raleway-Medium.ttf');
+    src: url('police/Raleway/Raleway-Medium.ttf');
+    font-family: 'Rancho';
+    src: url('police/Rancho/Rancho-Regular.ttf');
 }
 
 /* HTML */
@@ -25,8 +27,11 @@ html
 
 #element_logo
 {
-    height: 3em;
     align-self: center;
+    font-family: 'Rancho', sans-serif;
+    color: #0065FC;
+    font-size: 3em;
+    font-weight: 100;
 }
 
 .element_liens_header
@@ -73,16 +78,24 @@ html
     font-size: 1.1em;
 }
 
-/* Titre H1 & H2 */
+/* Header description */
 
-.container_titre_header
+.container_header_descr
 {
     font-size: 0.6em;
 }
 
-.container_titre_header h2
+.container_header_descr h2
 {
-    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container_header_descr p
+{
+    margin-bottom: 25px;
+    margin-top: -5px;
+    font-size: 1.5em;
 }
 
 /* Recherche */
@@ -213,18 +226,18 @@ html
     align-self: center;
 }
 
-/* Section Hébergement - Les plus Populaires - Afficher plus */
+/* Section : Hébergement - Les plus Populaires - Afficher plus */
 
 /* Les plus populaires */
 
-.element_section_populaire
+.element_section_populaires
 {
     background-color: #F2F2F2;
     float: right;
     width: 20%;    
 }
 
-.container_populaire
+.container_populaires
 {
     display: flex;
     flex-direction: column;
@@ -233,20 +246,20 @@ html
 
 /* Titre*/
 
-.container_populaire_titre
+.container_populaires_titre
 {
     display: flex;
     justify-content: space-between;
 }
 
-.element_populaire_titre
+.element_populaires_titre
 {
     margin-left: 2em;
     margin-bottom: 0;
     font-size: 1.5em;
 }
 
-.element_populaire_icon
+.element_populaires_icon
 {
     margin-right: 17px;
     align-self: flex-end;
@@ -255,45 +268,51 @@ html
 
 /* Photos */
 
-.container_populaire_photos
+.container_populaires_photos
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.element_populaire_photos
+.element_populaires_photos
 {
     background-color: white;
     padding: 3px;
     border-radius: 10px 10px 10px 10px;
     width: 100%;
+    display: flex;
+    height: 226px;
 }
 
-.element_populaire_photos img
+.element_populaires_photos img
 {
-    height: 193px;
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+    object-fit: cover;
 }
 
-.element_populaire_photos figcaption
+.element_populaires_photos figcaption
 {
     font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.element_populaire_photos>figcaption>h4
+.populaires_nom
 {
     margin: 5px;
+    font-weight: bold;
 }
 
-.element_populaire_photos>figcaption>h5
+.populaires_prix
 {
-    margin: 5px;
-    font-weight: 100;
+    margin: 5px 0px 5px 5px;
 }
 
-.element_populaire_photos>figcaption>h5>span
+.element_populaires_photos>figcaption>div>p>span
 {
     font-weight: bold;
 }
@@ -360,25 +379,26 @@ html
     border-radius: 10px 10px 0px 0px;
     height: 250px;
     width: 395px;
+    object-fit: cover;
 }
 
-.element_hebergements_photos>figure>figcaption>h4
+.hebergements_nom
 {
     margin: 5px;
+    font-weight: bold;
 }
 
-.element_hebergements_photos>figure>figcaption>h5
+.hebergements_prix
 {
-    margin: 5px;
-    font-weight: 100;
+    margin: 5px 0px 5px 5px;
 }
 
-.element_hebergements_photos>figure>figcaption>h5>span
+.element_hebergements_photos>figure>figcaption>p>span
 {
     font-weight: bold;
 }
 
-/* Notation étoiles */
+/* Notation étoiles : Les plus populaires - Hébergements */
 
 /* Par défaut, une étoile est en gris, avec un padding et un curseur en forme de main. */
 .fa-star 
@@ -438,11 +458,10 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 {
     color: black;
     text-decoration: none;
-    margin: 2.27em;
-    margin-left: 2.5em;
+    margin: 0em 0em 1em 2.5em;
 }
 
-/* Section Activités */
+/* Activités */
 
 .container_section_Activites
 {
@@ -497,6 +516,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     border-radius: 10px 10px 0px 0px;
     height: 440px;
     width: 350px;
+    object-fit: cover;
 }
 
 .activites_photos_doubles
@@ -504,7 +524,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     height: 194px !important;
 }
 
-.element_activites_photos>figure>figcaption>h4
+.activites_nom
 {
     margin: 5px;
 }
@@ -577,19 +597,30 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
     /* Les plus Populaires */
 
-    .element_section_populaire 
+    .element_section_populaires 
     {
         background-color: #F2F2F2;
         float: right;
         width: 38%;
     }
 
-    .element_populaire_titre
+    .element_populaires_titre
     {
         margin-left: 2em;
         margin-bottom: 0;
         font-weight: bold;
         font-size: 1em;
+    }
+
+    .element_populaires_photos 
+    {
+        background-color: white;
+        padding: 3px;
+        border-radius: 10px 10px 10px 10px;
+        width: 100%;
+        display: flex;
+        height: 226px;
+        margin: 1em;
     }
 
     /* Afficher plus */
@@ -601,11 +632,11 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         width: 60%;
     }
 
-    .element_affPlus {
+    .element_affPlus 
+    {
         color: black;
         text-decoration: none;
-        margin: 2.27em;
-        margin-left: 1.5em;
+        margin: 1.5em 0em 1em 1.5em;
     }
     
     /* Footer */
@@ -642,6 +673,8 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         order: 1;
         height: 3em;
         align-self: start;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .element_liens_header:nth-child(2)
@@ -732,7 +765,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         font-size: 1em;
     }
 
-    /* Section Hébergement - Les plus Populaires - Afficher plus */
+    /* Hébergement - Les plus Populaires - Afficher plus */
 
     .container_section_HebPopAff
     {
@@ -742,13 +775,23 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
     /* Les plus Populaires */
 
-    .element_section_populaire 
+    .element_section_populaires 
     {
         background-color: #F2F2F2;
         float: right;
         width: 100%;
         height: 100%;
         margin-bottom: 1em;
+    }
+
+    .element_populaires_photos {
+        background-color: white;
+        padding: 3px;
+        border-radius: 10px 10px 10px 10px;
+        width: 100%;
+        display: flex;
+        height: 150px;
+        margin: 1em;
     }
 
     /* Hébergements */

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns:og="http://ogp.me/ns#"> <!-- Langue : Français / Activation des 'Open Graph' -->
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<!-- Langue : Français / Activation des 'Open Graph' -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia</title>
 
     <!-- Open Graph -->
     <meta property="og:title" content="Reservia">
@@ -27,7 +29,7 @@
         <div class="header">
             <!-- Navbar -->
             <nav class="container_nav">
-                <img id="element_logo" src="img/logo/Reservia@3x.png" alt="Logo 'Reservia'">
+                <h1 id="element_logo">Reservia</h1>
                 <ul class="element_liens_header">
                     <li>
                         <a href="#ancre_hebergements">Hébergements</a>
@@ -39,9 +41,9 @@
                 <a class="element_lien_inscription" href="#">S'inscrire</a>
             </nav>
 
-            <div class="container_titre_header">
-                <h1 class="element_h1">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2 class="element_h2">En plein centre ville ou en pleine nature</h2>
+            <div class="container_header_descr">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
             </div>
 
             <!-- Recherche -->
@@ -95,61 +97,94 @@
         </div>
     </header>
 
-    <!-- Hébergement - Les plus Populaires - Afficher plus -->
+    <!-- Section : Hébergement - Les plus Populaires - Afficher plus -->
     <section class="container_section_HebPopAff">
         <!-- Les plus populaires -->
-        <aside class="element_section_populaire">
-            <div class="container_populaire">
+        <aside class="element_section_populaires">
+            <div class="container_populaires">
                 <!-- Populaires : Titre -->
-                <div class="container_populaire_titre">
-                    <h3 class="element_populaire_titre">
+                <div class="container_populaires_titre">
+                    <h3 class="element_populaires_titre">
                         Les plus populaires
                     </h3>
-                    <i class="fa fa-line-chart element_populaire_icon" aria-hidden="true"></i>
+                    <i class="fa fa-line-chart element_populaires_icon" aria-hidden="true"></i>
                 </div>
                 <!-- Populaires : Photos -->
-                <div class="container_populaire_photos">
+                <div class="container_populaires_photos">
                     <!-- Photo 1 -->
-                    <figure class="element_populaire_photos">
+                    <figure class="element_populaires_photos">
                         <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                             alt="Intérieur chambre - Hôtel Le soleil du matin">
                         <figcaption>
-                            <h4>
-                                Hôtel Le soleil du matin
-                            </h4>
-                            <h5>
-                                Nuit à partir de <span>128€</span>
-                            </h5>
+                            <div>
+                                <p class="populaires_nom">
+                                    Hôtel Le soleil du matin
+                                </p>
+                                <p class="populaires_prix">
+                                    Nuit à partir de <span>128€</span>
+                                </p>
+                            </div>
                             <!-- Notation en étoiles -->
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                </div>
+                            </div>
                         </figcaption>
                     </figure>
                     <!-- Photo 2 -->
-                    <figure class="element_populaire_photos">
+                    <figure class="element_populaires_photos">
                         <img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                             alt="Intérieur chambre - Au coeur de l'eau - Chambres d'hôtes">
                         <figcaption>
-                            <h4>
-                                Au coeur de l'eau<br>
-                                Chambres d'hôtes
-                            </h4>
-                            <h5>
-                                Nuit à partir de <span>52€</span>
-                            </h5>
+                            <div>
+                                <p class="populaires_nom">
+                                    Au coeur de l'eau<br>
+                                    Chambres d'hôtes
+                                </p>
+                                <p class="populaires_prix">
+                                    Nuit à partir de <span>52€</span>
+                                </p>
+                            </div>
                             <!-- Notation en étoiles -->
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
                         </figcaption>
                     </figure>
                     <!-- Photo 3 -->
-                    <figure class="element_populaire_photos">
+                    <figure class="element_populaires_photos">
                         <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                             alt="Intérieur chambre - Hôtel Tout bleu et blanc">
                         <figcaption>
-                            <h4>
-                                Hôtel Tout bleu et blanc
-                            </h4>
-                            <h5>
-                                Nuit à partir de <span>68€</span>
-                            </h5>
+                            <div>
+                                <p class="populaires_nom">
+                                    Hôtel Tout bleu et blanc
+                                </p>
+                                <p class="populaires_prix">
+                                    Nuit à partir de <span>68€</span>
+                                </p>
+                            </div>
                             <!-- Notation en étoiles -->
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star blue"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
                         </figcaption>
                     </figure>
                 </div>
@@ -173,12 +208,12 @@
                             <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Intérieur chambre - Auberge de la Cannebière">
                             <figcaption>
-                                <h4>
+                                <p class="hebergements_nom">
                                     Auberge la Cannebière
-                                </h4>
-                                <h5>
+                                </p>
+                                <p class="hebergements_prix">
                                     Nuit à partir de <span>25€</span>
-                                </h5>
+                                </p>
                                 <!-- Notation en étoiles -->
                                 <div class="rating">
                                     <div class="stars">
@@ -198,12 +233,12 @@
                             <img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="Intérieur chambre - Hôtel du port">
                             <figcaption>
-                                <h4>
+                                <p class="hebergements_nom">
                                     Hôtel du port
-                                </h4>
-                                <h5>
+                                </p>
+                                <p class="hebergements_prix">
                                     Nuit à partir de <span>52€</span>
-                                </h5>
+                                </p>
                                 <!-- Notation en étoiles -->
                                 <div class="rating">
                                     <div class="stars">
@@ -223,12 +258,12 @@
                             <img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="Intérieur chambre - Hôtel Les mouettes">
                             <figcaption>
-                                <h4>
+                                <p class="hebergements_nom">
                                     Hôtel Les mouettes
-                                </h4>
-                                <h5>
+                                </p>
+                                <p class="hebergements_prix">
                                     Nuit à partir de <span>76€</span>
-                                </h5>
+                                </p>
                                 <!-- Notation en étoiles -->
                                 <div class="rating">
                                     <div class="stars">
@@ -248,12 +283,12 @@
                             <img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 alt="Intérieur chambre - Hôtel de la mer">
                             <figcaption>
-                                <h4>
+                                <p class="hebergements_nom">
                                     Hôtel de la mer
-                                </h4>
-                                <h5>
+                                </p>
+                                <p class="hebergements_prix">
                                     Nuit à partir de <span>46€</span>
-                                </h5>
+                                </p>
                                 <!-- Notation en étoiles -->
                                 <div class="rating">
                                     <div class="stars">
@@ -273,12 +308,12 @@
                             <img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="Intérieur chambre - Auberge Le Panier">
                             <figcaption>
-                                <h4>
+                                <p class="hebergements_nom">
                                     Auberge Le Panier
-                                </h4>
-                                <h5>
+                                </p>
+                                <p class="hebergements_prix">
                                     Nuit à partir de <span>23€</span>
-                                </h5>
+                                </p>
                                 <!-- Notation en étoiles -->
                                 <div class="rating">
                                     <div class="stars">
@@ -298,12 +333,12 @@
                             <img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 alt="Intérieur chambre - Hôtel chez Amina">
                             <figcaption>
-                                <h4>
+                                <p class="hebergements_nom">
                                     Hôtel Amina
-                                </h4>
-                                <h5>
+                                </p>
+                                <p class="hebergements_prix">
                                     Nuit à partir de <span>96€</span>
-                                </h5>
+                                </p>
                                 <!-- Notation en étoiles -->
                                 <div class="rating">
                                     <div class="stars">
@@ -344,9 +379,9 @@
                         <figure>
                             <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                             <figcaption>
-                                <h4>
+                                <p class="activites_nom">
                                     Vieux Port
-                                </h4>
+                                </p>
                             </figcaption>
                         </figure>
                     </a>
@@ -358,9 +393,9 @@
                                     src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                                     alt="Fort de Pomègues">
                                 <figcaption>
-                                    <h4>
+                                    <p class="activites_nom">
                                         Fort de Pomègues
-                                    </h4>
+                                    </p>
                                 </figcaption>
                             </figure>
                         </a>
@@ -371,9 +406,9 @@
                                     src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                                     alt="Iles du Frioul">
                                 <figcaption>
-                                    <h4>
+                                    <p class="activites_nom">
                                         Iles du Frioul
-                                    </h4>
+                                    </p>
                                 </figcaption>
                             </figure>
                         </a>
@@ -384,9 +419,9 @@
                             <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                                 alt="Parc Nationnal des Calanques">
                             <figcaption>
-                                <h4>
+                                <p class="activites_nom">
                                     Parc Nationnal des Calanques
-                                </h4>
+                                </p>
                             </figcaption>
                         </figure>
                     </a>
@@ -398,9 +433,9 @@
                                     src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                                     alt="Notre-Dame-de-la-Garde">
                                 <figcaption>
-                                    <h4>
+                                    <p class="activites_nom">
                                         Notre-Dame-de-la-Garde
-                                    </h4>
+                                    </p>
                                 </figcaption>
                             </figure>
                         </a>
@@ -411,9 +446,9 @@
                                     src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                                     alt="Parc Longchamp">
                                 <figcaption>
-                                    <h4>
+                                    <p class="activites_nom">
                                         Parc Longchamp
-                                    </h4>
+                                    </p>
                                 </figcaption>
                             </figure>
                         </a>
