@@ -226,11 +226,11 @@ html
     align-self: center;
 }
 
-/* Section : Hébergement - Les plus Populaires - Afficher plus */
+/* Main : Hébergement - Les plus Populaires - Afficher plus */
 
 /* Les plus populaires */
 
-.element_section_populaires
+.element_aside_populaires
 {
     background-color: #F2F2F2;
     float: right;
@@ -597,7 +597,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
     /* Les plus Populaires */
 
-    .element_section_populaires 
+    .element_aside_populaires 
     {
         background-color: #F2F2F2;
         float: right;
@@ -765,9 +765,9 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         font-size: 1em;
     }
 
-    /* Hébergement - Les plus Populaires - Afficher plus */
+    /* Main : Hébergement - Les plus Populaires - Afficher plus */
 
-    .container_section_HebPopAff
+    .container_main_HebPopAff
     {
         display: flex;
         flex-direction: column;
@@ -775,7 +775,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
     /* Les plus Populaires */
 
-    .element_section_populaires 
+    .element_aside_populaires 
     {
         background-color: #F2F2F2;
         float: right;
@@ -839,6 +839,7 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     }
 
     /* Afficher plus */
+    
     .container_affPlus 
     {
         display: flex;
