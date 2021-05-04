@@ -309,7 +309,7 @@ html
 
 .populaires_prix
 {
-    margin: 5px 0px 5px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 .element_populaires_photos>figcaption>div>p>span
@@ -557,12 +557,20 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
 /* Responsive */
 
+/* Orientation : Paysage */
+
 /* Tablette de largeur : 768px */
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 375px et 768px */
 @media all and (min-width: 375px) and (max-width: 768px)
 {
     /* Filtres */
+
+    .element_filtres 
+    {
+        font-size: 1em;
+        width: 100%;
+    }
 
     .filtres_all>td>button 
     {
@@ -576,7 +584,31 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         font-family: 'Raleway', sans-serif;
         border-radius: 50px 50px 50px 50px;
         margin: 1em;
+        font-size: 10px;
+    }
+
+    /* Information */
+
+    .container_information 
+    {
+        display: flex;
         font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    .container_information i 
+    {
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+        color: #0065FC;
+        margin-right: 10px;
+        height: 10px;
+        width: 10px;
+        text-align-last: center;
+        border: 1px solid #F2F2F2;
+        align-self: center;
+        padding-bottom: 14px;
     }
 
     /* Hébergements */
@@ -653,6 +685,8 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         margin-left: 18px;
     }
 }
+
+/* Sur mobiles */
 
 /* I Phone 8 de largeur : 375px */
 
@@ -835,11 +869,11 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
     {
         border-radius: 10px 10px 0px 0px;
         height: 250px;
-        width: 321px;
+        width: 100%;
     }
 
     /* Afficher plus */
-    
+
     .container_affPlus 
     {
         display: flex;
@@ -894,5 +928,152 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
         margin-right: 0;
         margin-left: 0;
     }
+}
 
+/* Galaxy Fold de largeur : 280px */
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 280px */
+@media screen and (max-width: 280px)
+{
+    .element_hebergements_photos img {
+        border-radius: 10px 10px 0px 0px;
+        height: 250px;
+        width: 100%;
+    }
+}
+
+/* Orientation : Paysage */
+
+/* Sur tous les écrans, orientés horizontalement */
+@media all and (orientation: landscape)
+{
+    /* Filtres */
+
+    .element_filtres 
+    {
+        font-size: 1em;
+    }
+
+    /* Information */
+
+    .container_information 
+    {
+        display: flex;
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    .container_information i 
+    {
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+        color: #0065FC;
+        margin-right: 10px;
+        height: 10px;
+        width: 10px;
+        text-align-last: center;
+        border: 1px solid #F2F2F2;
+        align-self: center;
+        padding-bottom: 14px;
+    }
+
+    /* Main : Hébergement - Les plus Populaires - Afficher plus */
+
+    .container_main_HebPopAff
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Les plus Populaires */
+
+    .element_aside_populaires 
+    {
+        background-color: #F2F2F2;
+        float: right;
+        width: 100%;
+    }
+
+    /* Hébergements */
+
+    .container_hebergements_photos 
+    {
+        display: flex;
+        flex-wrap: initial;
+        justify-content: center;
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+
+    .element_section_hebergements 
+    {
+        height: 138em;
+        width: 100%;
+        background-color: white;
+    }
+
+    .element_hebergements_titre 
+    {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    .element_hebergements_photos figure 
+    {
+        background-color: white;
+        padding: 3px;
+        border-radius: 10px 10px 10px 10px;
+        margin: 10px 0px 10px 0px;
+    }
+        
+    .element_hebergements_photos img 
+    {
+        border-radius: 10px 10px 0px 0px;
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Afficher plus */
+
+    .container_affPlus 
+    {
+        display: flex;
+        background-color: white;
+        width: 100%;
+    }
+
+    .element_affPlus 
+    {
+        color: black;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    /* Activités */
+
+    .container_activites_photos 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .element_activites_photos img 
+    {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        object-fit: cover;
+        max-height: 200px;
+    }
+
+    /* Footer */
+    .element_footer 
+    {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
 }
