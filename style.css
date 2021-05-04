@@ -944,8 +944,8 @@ Et si la souris survole une étoile en particulier, on sélectionne toutes les �
 
 /* Orientation : Paysage */
 
-/* Sur tous les écrans, orientés horizontalement */
-@media all and (orientation: landscape)
+/* Sur tous les écrans, d'une largeur maximale de 1024px et orientés horizontalement */
+@media all and (max-width: 1024px) and (orientation: landscape)
 {
     /* Filtres */
 
